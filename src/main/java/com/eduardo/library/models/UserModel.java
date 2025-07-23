@@ -1,12 +1,13 @@
 package com.eduardo.library.models;
 
 import com.eduardo.library.enums.RoleUser;
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.io.Serial;
 import java.time.LocalDateTime;
 
@@ -28,6 +29,9 @@ public class UserModel {
 
     @Column(name = "USER_NAME")
     private String userName;
+
+    @Column(name = "USER_NICKNAME")
+    private String userNickName;
 
     @Column(name = "USER_EMAIL")
     private String userEmail;

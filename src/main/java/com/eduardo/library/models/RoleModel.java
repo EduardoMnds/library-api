@@ -1,7 +1,7 @@
 package com.eduardo.library.models;
 
 import com.eduardo.library.enums.RoleUser;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
