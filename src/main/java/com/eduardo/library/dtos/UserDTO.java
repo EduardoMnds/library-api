@@ -1,6 +1,6 @@
 package com.eduardo.library.dtos;
 
-import com.eduardo.library.enums.RoleUser;
+import com.eduardo.library.enums.user.RoleUser;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -37,7 +37,6 @@ public class UserDTO {
     private String userNickName;
 
     @NotNull
-    @Size(min = 1, max = 50)
     private RoleUser userRole;
 
 }

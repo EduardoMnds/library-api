@@ -1,6 +1,6 @@
 package com.eduardo.library.dtos;
 
-import com.eduardo.library.enums.Status;
+import com.eduardo.library.enums.library.Status;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

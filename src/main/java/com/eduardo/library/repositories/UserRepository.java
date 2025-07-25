@@ -2,13 +2,15 @@ package com.eduardo.library.repositories;
 
 import com.eduardo.library.models.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
+import java.util.List;
+import java.util.Optional;
+
 public interface UserRepository extends JpaRepository<UserModel, Long> {
 
-    boolean existsByUserNameAndUserCpf(String userEmail , String userCpf);
+    boolean existsByUserEmailOrUserCpf(String userEmail, String userCpf);
 
-    boolean findByUserNickNameAndPassword(String userEmail , String password);
+    boolean existsByUserEmailAndUserPassword(String userEmail , String userPassword);
 
+    Optional<UserModel> findByUserEmail(String userEmail);
 }

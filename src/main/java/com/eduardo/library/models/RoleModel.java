@@ -1,6 +1,6 @@
 package com.eduardo.library.models;
 
-import com.eduardo.library.enums.RoleUser;
+import com.eduardo.library.enums.user.RoleUser;
 import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

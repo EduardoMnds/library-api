@@ -1,7 +1,7 @@
 package com.eduardo.library.models;
 
 
-import com.eduardo.library.enums.Status;
+import com.eduardo.library.enums.library.Status;
 import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
